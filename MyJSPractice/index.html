@@ -24,9 +24,11 @@
 
     <script>
       'use strict';
-      // アロー関数で表記
-      document.getElementById('target').addEventListener('click', () => {
-        document.getElementById('target').classList.toggle('circle');
+
+      const target = document.getElementById('target');
+
+      target.addEventListener('click', () => {
+        target.classList.toggle('circle');
         // toggleは()要素がなかったらつける、ついてたら外すという命令
       });
     </script>
